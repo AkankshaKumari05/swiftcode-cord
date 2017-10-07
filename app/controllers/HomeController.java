@@ -18,11 +18,12 @@ import java.util.Objects;
 
 public class HomeController extends Controller {
 
-    public Result index(){
+    public Result index() {
         return ok(view.html.index.render());
 
     }
-    public LegacyWebSocket<String> chatSocket(){
+
+    public LegacyWebSocket<String> chatSocket() {
         return WebSocket.withActor(MessageActor::props);
     }
 }
