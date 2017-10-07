@@ -6,7 +6,7 @@ import akka.actor.UntypedActor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import data.FeedResponse;
 import data.Message;
-import org.omg.CORBA.Object;
+
 import services.FeedService;
 import services.NewsAgentService;
 
@@ -30,7 +30,7 @@ public class MessageActor extends UntypedActor {
         ObjectMapper mapper = new ObjectMapper();
         Message messageObject = new Message();
         if (message instanceof String) {
-            messageObject.text = (String) Message;
+            messageObject.text = (String) message;
             messageObject.sender = Message.Sender.USER;
             out.tell(mapper.writeValueAsString(messageObject), self());
             String keyword = newsAgentService.getNewsAgentResponse((String) message, UUID.randomUUID()).keyword;

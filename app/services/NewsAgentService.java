@@ -14,7 +14,7 @@ public class NewsAgentService {
     public NewsAgentResponse getNewsAgentResponse(String keyword, UUID sessionId) {
         NewsAgentResponse newsAgentResponse = new NewsAgentResponse();
         try {
-            WSRequest queryRequest = ws.url("https://api.api.ai/api/query");
+            WSRequest queryRequest = WS.url("https://api.api.ai/api/query");
             CompletionStage<WSResponse> responsePromise = queryRequest
                     .setQueryParameter("v", "20150910")
                     .setQueryParameter("query", keyword)

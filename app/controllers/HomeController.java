@@ -10,6 +10,7 @@ import play.mvc.LegacyWebSocket;
 import play.mvc.Result;
 import play.mvc.Results;
 import play.mvc.WebSocket;
+import views.html.index;
 //import views.html.chat;
 //import views.html.login;
 
@@ -19,7 +20,7 @@ import java.util.Objects;
 public class HomeController extends Controller {
 
     public Result index() {
-        return ok(view.html.index.render());
+        return ok(views.html.index.render());
 
     }
 
