@@ -24,4 +24,10 @@ font-size:10px;
 }
 .fa{
 font-size:30px;
+color: #000;
+
+}
+.md-button.md-fab
+{
+line-height:0;
 }
