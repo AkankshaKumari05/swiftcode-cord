@@ -38,13 +38,13 @@
     <md-card id="form-card" flex="10" layout="row"
              class="md-whiteframe-8dp">
         <form flex="90" layout="row" ng-submit="sendMessage()">
-            <md-input-container layout-align="center center" flex class="md-accent">
+            <md-input-container layout-align="center center" flex class="md-primary md-hue-2">
                 <label >Message</label>
                 <input  ng-model="userMessage">
             </md-input-container>
         </form>
         <div flex='10' >
-            <md-button class="md-icon-button md-fab" ng-click="sendMessage()" >
+            <md-button class="md-icon-button md-fab md-accent" ng-click="sendMessage()" >
                 <md-icon><i class="fa fa-hand-o-right" aria-hidden="true"></i></md-icon>
             </md-button>
         </div>
