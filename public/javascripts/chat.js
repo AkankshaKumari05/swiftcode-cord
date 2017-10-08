@@ -17,6 +17,7 @@ var  exampleSocket =  new  WebSocket("wss://swiftcode-ws-chat.herokuapp.com/chat
     $scope.sendMessage = function () {
             exampleSocket.send($scope.userMessage);
             $scope.userMessage = "";
+            $scope.trust=$sce.trustAsHtml;
         };
-        $scope.trust=$sce.trustsHtml;
+
 });
