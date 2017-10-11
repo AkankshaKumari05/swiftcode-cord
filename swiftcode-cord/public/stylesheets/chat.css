@@ -1,0 +1,33 @@
+
+#message-pane {
+    background: url(https://i.ytimg.com/vi/8vgD1iaohDs/hqdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom
+}
+.message-card{
+max-width:80%;
+border-radius:10px;
+padding:20px;
+font-size:20px;
+font-family: 'Lobster', cursive;
+box-shadow: 10px 8px 8px 3px #123231
+}
+
+.message-time{
+margin-top:4px;
+color:#666555;
+font-size:10px;
+}
+#form-card {
+	margin: 0;
+}
+.fa{
+font-size:30px;
+color: #000;
+
+}
+.md-button.md-fab
+{
+line-height:0;
+}
